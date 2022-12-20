@@ -21,15 +21,48 @@ body {
     color: --white;
 }
 
-button{
-    font-size: 15px !important;
-}
+
 
 h1 {
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 5em;
     color: var(--black);
-    line-height: 1;
+    line-height: 0.8;
 }
 
+.hero-text {
+    padding-bottom: 50px;
+}
 
+p{
+   font-weight: bold;
+}
+
+.wrapper {
+    margin-top: 100px;
+}
+
+.wrapper2 {
+    padding-right: 30px;
+    max-height: 800px;
+}
+
+.hero-image {
+    max-height: 100%;
+}
+
+.attribution {
+    position:sticky;
+    bottom: 0;
+    background: var(--white);
+    padding: 5px;
+}
+
+.btn {
+    color: var(--gray);
+    font-weight: bolder;
+}
+
+.btn:hover {
+    color: var(--black);
+}
