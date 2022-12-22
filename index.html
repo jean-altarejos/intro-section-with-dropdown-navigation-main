@@ -24,7 +24,6 @@
 
 </head>
 <body>
-
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -34,34 +33,35 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#"><strong>Features</strong></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#"><strong>Company</strong></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#"><strong>Careers</strong></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link"><strong>About</strong></a>
-            </li>
-          </ul>
-        </div>
-        <div>
-            <button class="btn me-2" type="button">Login</button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#"><strong>Features</strong></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#"><strong>Company</strong></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#"><strong>Careers</strong></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link"><strong>About</strong></a>
+              </li>
+            </ul>
+            <div class="justify-content-end">
+              <button class="btn me-2" type="button">Login</button>
             <button class="btn btn-outline-secondary rounded-3 py-2 px-3 ms-2" type="button"><strong>Register</strong></button>
-        </div>
+            </div>
+            
+        </div> 
       </div>
     </nav>
   </div>
 
-  <div class="container px-5 py-5">
+  <div class="hero-container px-5 py-5">
     <div class="row">
       <div class="col-6 d-flex align-items-center">
-        <div class="hero-section wrapper2">
+        <div class="hero-section wrapper2 order-2">
           <h1 class="hero-text">Make <br> remote work</h1>
 
           <p class="text-muted">Get your team in sync, no matter your location. Streamline processes, 
@@ -78,16 +78,22 @@
 
         </div>
       </div>
-      <div class="col-6 hero-image">
+      <div class="col-6 hero-image order-1">
         <img class="img-fluid" src="images/image-hero-desktop.png" alt="">
       </div>
     </div>
   </div>
 
+  <div class="sample container d-flex" style="background: red; height: 100px; ">
+    <div style="background: pink; height: 50px; width: 50px;" class="order-2">Flex</div>
+    <div style="background: magenta; height: 50px; width: 50px;" class="order-1">Flex</div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Jean M Altarejos</a>.
   </div>
+
+  
 </body>
 </html>
