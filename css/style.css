@@ -21,18 +21,26 @@ body {
     color: --white;
 }
 
-.btn {
-    color: var(--gray);
-    font-weight: bolder;
-}
-
-.btn:hover {
+#register:hover {
+    background-color: var(--white);
     color: var(--black);
+    border: 2px solid var(--black);
 }
 
+#learnmore {
+    background: var(--black);
+    color: var(--white);
+    font-weight: bolder;
+    width: fit-content;
+}
+
+#learnmore:hover {
+    color: var(--gray);
+    background: var(--white);
+}
 
 h1 {
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 5em;
     color: var(--black);
     line-height: 0.8;
@@ -42,6 +50,10 @@ h1 {
     padding-bottom: 50px;
 }
 
+.img-container {
+    padding: 80px;
+    box-sizing: border-box;
+}
 p{
    font-weight: bold;
 }
@@ -51,12 +63,16 @@ p{
 }
 
 .wrapper2 {
-    padding-right: 30px;
-    max-height: 800px;
+    box-sizing: border-box;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero-image {
-    max-height: 100%;
+.hero-image-desktop {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .attribution {
@@ -66,7 +82,96 @@ p{
     padding: 5px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
 
+li {
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+li i {
+    padding: 0px 8px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.hero-header{
+    position: relative;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.navbar-nav li:nth-child(1)::after{
+    content: "\25BC";
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li:nth-child(1)::after.active{
+    content: "\25B2";
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li:nth-child(2)::after{
+    content: "\25BC";
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li:nth-child(2)::after.active{
+    content: "\25B2";
+    display: flex;
+    align-items: center;
+}
+
+.feature-toggler {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 14%;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--white);
+}
+
+.feature-toggler ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature-toggler.active {
+    display: block;
+}
+.company-toggler {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid black;
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    background-color: var(--white);
+}
+
+.company-toggler.active {
+    display: block;
+}
 
 @media (min-width: 1399px) {
     h1 {
@@ -95,7 +200,6 @@ p{
     }
     
     .hero-image-desktop {
-        padding-left: 50px;
         max-height: 100vh;
         margin: auto;
     }
