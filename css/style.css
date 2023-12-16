@@ -44,6 +44,9 @@ h1 {
     font-size: 5em;
     color: var(--black);
     line-height: 0.8;
+    display: inline-block;
+    width: 98%;
+    font-weight: bolder;
 }
 
 .hero-text {
@@ -172,93 +175,15 @@ ul {
 .company-toggler.active {
     display: block;
 }
+ 
+.hero-image-mobile {
+    display: none;
+}
 
-@media (min-width: 1399px) {
-    h1 {
-        font-weight: bolder;
-        font-size: 4em;
-        color: var(--black);
-        line-height: 0.8;
-    }
-    
-    .hero-text {
-        padding-bottom: 50px;
-    }
-    
-    p{
-       font-weight: bold;
-       font-size: 16px;
-    }
-    
-    .wrapper {
-        margin-top: 100px;
-    }
-    
-    .wrapper2 {
-        max-height: 800px;
-        max-width: 100%;
-    }
-    
-    .hero-image-desktop {
-        max-height: 100vh;
-        margin: auto;
-    }
-    
-    .hero-image-mobile {
-        display: none;
-    }
+.sidebar-mobile {
+    display: none;
+}
 
-    .attribution {
-        position:sticky;
-        bottom: 0;
-        background: var(--white);
-        padding: 5px;
-    }
-}   
-
-
-@media (max-width: 1199px) {
-    h1 {
-        font-weight: bolder;
-        font-size: 3em;
-        color: var(--black);
-        line-height: 0.8;
-    }
-    
-    .hero-text {
-        padding-bottom: 50px;
-    }
-    
-    p{
-       font-weight: bold;
-       font-size: 16px;
-    }
-    
-    .wrapper {
-        margin-top: 100px;
-    }
-    
-    .wrapper2 {
-        max-height: 800px;
-        max-width: 100%;
-    }
-    
-    .hero-image {
-        padding-left: 50px;
-        max-height: 100%;
-    }
-
-    .hero-image-mobile {
-        display: none;
-    }
-    
-    .attribution {
-        position:sticky;
-        bottom: 0;
-        background: var(--white);
-        padding: 5px;
-    }
-}   
 
 @media (max-width: 990px) {
     .mobile-row {
@@ -274,13 +199,6 @@ ul {
     .mobile-order-2 {
         order: 2;
     }
-
-    h1 {
-        font-weight: bolder;
-        font-size: 3em;
-        color: var(--black);
-        line-height: 0.8;
-    }
     
     p{
        font-weight: bold;
@@ -292,7 +210,8 @@ ul {
     }
 
     .hero-image-desktop {
-        padding-left: 50px;
+        box-sizing: border-box;
+        padding: 50px;
         height: 100%;
         padding: 50px;
         display: none;
@@ -304,8 +223,6 @@ ul {
         padding: 50px;
     }
     
-    
-    
 }   
 
 .attribution {
@@ -313,4 +230,70 @@ ul {
     bottom: 0;
     background: var(--white);
     padding: 5px;
+}
+
+@media (max-width: 792px) {
+    .img-container{
+        padding: 0px;
+    }
+
+    .hero-image-mobile {
+        padding: 0px;
+    }
+
+    #hero-section-mobile {
+        display: block;
+    }
+
+    .wrapper2 {
+        width:100%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .sidebar-mobile.active{
+        display: block;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 50px 30px;
+        background: var(--white);
+        width: 250px;
+        height: 100vh;
+        text-align: left;
+        transition: ease-in 0.3s;
+    }
+
+    .sidebar-mobile {
+        display: none;
+    }
+
+    .cancel-btn {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        left: 80%;
+        transition: ease-out 0.3s;
+    }
+
+    .feat-icon::after {
+        content: "\25BC";
+        padding: 0px 10px;
+    }
+
+    .company-icon::after {
+        content: "\25BC";
+        padding: 0px 10px;
+    }
+
+    .feat-menu, .company-menu {
+        display: none;
+    }
+
+    .feat-menu.active, .company-menu.active {
+        display: block;
+    }
 }

@@ -31,7 +31,7 @@
         <a class="navbar-brand me-5" href="#">
           <img src="images/logo.svg" alt="snap logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -75,8 +75,25 @@
   <div class="hero-container">
     <div class="row mobile-row">
       <div class="col-lg-6 d-flex align-items-center mobile-order-2">
-        <div class="d-flex hero-section wrapper2 ">
+        <!-- <div id="hero-section" class="wrapper2">
           <h1 class="hero-text">Make <br> remote work</h1>
+
+          <p class="text-muted">Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.</p>
+          
+          <button id="learnmore" class="mt-5 btn btn-outline-secondary py-2 px-3 me-2" type="button">Learn More</button>
+
+          <div class="d-flex justify-content-start wrapper">
+            <img class="me-5 h-100" src="images/client-databiz.svg" alt="">
+            <img class="me-5 h-100" src="images/client-audiophile.svg" alt="">
+            <img class="me-5 h-100" src="images/client-meet.svg" alt="">
+            <img class="me-5 h-100" src="images/client-maker.svg" alt="">
+          </div>
+
+        </div> -->
+
+        <div id="hero-section-mobile" class="wrapper2">
+          <h1 class="hero-text">Make remote work</h1>
 
           <p class="text-muted">Get your team in sync, no matter your location. Streamline processes, 
             create team rituals, and watch productivity soar.</p>
@@ -92,6 +109,34 @@
 
         </div>
       </div>
+      <nav class="sidebar-mobile">
+        <div class="cancel-btn">
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <ul class="navmenu">
+          <li class="navitem-feat">Features<span class="feat-icon"></span>
+            <ul class="feat-menu">
+              <li class="feat-item"><i class="fa-solid fa-clipboard-check"></i>Todo List</li>
+              <li class="feat-item"><i class="fa-solid fa-calendar-days"></i>Calendar</li>
+              <li class="feat-item"><i class="fa-solid fa-bell"></i>Reminders</li>
+              <li class="feat-item"><i class="fa-solid fa-bullseye"></i>Planning</li>
+            </ul>
+          </li>
+          <li class="navitem-company">Company<span class="company-icon"></span>
+            <ul class="company-menu">
+              <li class="company-item">History</li>
+              <li class="company-item">Our Team</li>
+              <li class="company-item">Blog</li>
+            </ul>
+          </li>
+          <li class="navitem">Careers</li>
+          <li class="navitem">About</li>
+          <li class="navbtn text-center">Login</li>
+          <li class="navbtn d-flex justify-content-center">
+            <button id="register" class="btn btn-outline-secondary rounded-3 py-2 px-3 ms-2" type="button"><strong>Register</strong></button>
+          </li>
+        </ul>
+      </nav>
       <div class="img-container col-lg-6 mobile-order-1">
         <img class="hero-image-desktop" src="images/image-hero-desktop.png" alt="">
         <img class="img-fluid hero-image-mobile" src="images/image-hero-mobile.png" alt="">
